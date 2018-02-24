@@ -49,4 +49,9 @@ public class FormationBusinessJPA implements FormationBusiness {
     public List<Formation> recupererFromationParNom(String nomFormation) {
         return this.formationRepository.findByNomFormation(nomFormation);
     }
+
+    @Override
+    public long nombreFormations() {
+        return this.formationRepository.count();
+    }
 }

@@ -30,6 +30,11 @@ public class PromotionController {
         return business.recupererPromotions();
     }
 
+    @RequestMapping(method = RequestMethod.GET , value = "count")
+    public long recupererNombrePromotions(){
+        return business.nombrePromotions();
+    }
+
     @RequestMapping(method = RequestMethod.GET, value = "/codeFormation/{codeFormation}/anneeUniversitaire/{anneeUniversitaire}")
     public Promotion recupererPromotionParCode(@PathVariable("codeFormation") String codeFormation, @PathVariable("anneeUniversitaire") String anneeUniversitaire){
         PromotionPK promotionPK = new PromotionPK(anneeUniversitaire,codeFormation);

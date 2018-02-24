@@ -1,5 +1,6 @@
 package fr.univbrest.dosi.business;
 
+import fr.univbrest.dosi.bean.Formation;
 import fr.univbrest.dosi.bean.Promotion;
 import fr.univbrest.dosi.bean.PromotionPK;
 import fr.univbrest.dosi.repositories.PromotionRepository;

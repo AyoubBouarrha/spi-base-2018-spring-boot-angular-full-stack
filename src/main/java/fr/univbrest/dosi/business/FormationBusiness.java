@@ -18,6 +18,7 @@ public interface FormationBusiness {
 
     List<Formation> recupererFromationParNom(String nomFormation);
 
+    long nombreFormations();
 
 
 

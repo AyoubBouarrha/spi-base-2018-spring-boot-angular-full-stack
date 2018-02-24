@@ -1,14 +1,15 @@
 package fr.univbrest.dosi.business;
 
 import fr.univbrest.dosi.bean.Candidat;
+import fr.univbrest.dosi.bean.Formation;
 
 import java.util.List;
 
 public interface CandidatBusiness {
 
-    public Candidat creerCandidat(Candidat candidat);
+    Candidat creerCandidat(Candidat candidat);
 
-    public void modifierCandidat(Candidat candidat);
+    void modifierCandidat(Candidat candidat);
 
     void supprimerCandidat(String noCandidat);
 

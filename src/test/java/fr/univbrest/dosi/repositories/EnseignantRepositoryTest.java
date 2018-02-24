@@ -2,17 +2,22 @@ package fr.univbrest.dosi.repositories;
 
 import fr.univbrest.dosi.AppTestConfig;
 import fr.univbrest.dosi.bean.Enseignant;
+import fr.univbrest.dosi.business.EnseignantBusinessJPA;
+import fr.univbrest.dosi.business.EnseignantBusinessJPATest;
 import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = AppTestConfig.class)
+@SpringBootTest(classes = AppTestConfig.class)
 public class EnseignantRepositoryTest {
 
     @Autowired

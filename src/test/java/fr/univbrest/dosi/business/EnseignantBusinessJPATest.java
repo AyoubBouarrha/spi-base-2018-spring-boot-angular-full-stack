@@ -3,7 +3,9 @@ package fr.univbrest.dosi.business;
 import fr.univbrest.dosi.bean.Enseignant;
 import fr.univbrest.dosi.repositories.EnseignantRepository;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import java.util.ArrayList;
 import java.util.List;

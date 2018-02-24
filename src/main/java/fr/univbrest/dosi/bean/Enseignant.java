@@ -19,6 +19,9 @@ public class Enseignant implements Serializable {
 
 	@Id
 	@Column(name="NO_ENSEIGNANT")
+	//--Une Sequence doit être obligatoirement crée pour génerer un noEnseignant (script de la sequence : "create sequence t1_seq start with 20 increment by 1 nomaxvalue;")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Sequence")
+	@SequenceGenerator(name = "id_Sequence", sequenceName = "t1_seq")
 	private long noEnseignant;
 
 	private String adresse;

@@ -45,4 +45,11 @@ public class CandidatController {
         return this.business.rechercheCandidatsParNom(nom);
     }
 
+    @RequestMapping(method = RequestMethod.GET , value = "count")
+    public long recupererNombreCandidat(){
+        return business.nombreCandidat();
+    }
+
+
+
 }

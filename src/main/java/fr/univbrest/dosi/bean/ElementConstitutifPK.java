@@ -65,4 +65,10 @@ public class ElementConstitutifPK implements Serializable {
 		
 		return hash;
 	}
+
+	public ElementConstitutifPK(String codeFormation, String codeUe, String codeEc) {
+		this.codeFormation = codeFormation;
+		this.codeUe = codeUe;
+		this.codeEc = codeEc;
+	}
 }
