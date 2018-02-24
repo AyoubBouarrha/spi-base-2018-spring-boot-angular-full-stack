@@ -13,7 +13,7 @@ La documentation de l'API est disponible sur http://localhost:8090/swagger-ui.ht
 ## Partie Angular
 Application AngularJS 1.6 + NPM
 
-### Instalation des modules NPM dans le dossier client
+### Instalation des modules NPM dans le dossier client ("/src/main/resources/client")
 `npm install`
 
 ### Démarrage
